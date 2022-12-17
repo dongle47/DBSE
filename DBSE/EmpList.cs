@@ -22,20 +22,24 @@ namespace DBSE
         {
             try
             {
-                string connString = "DATA SOURCE=103.104.122.48:59012/xe;" +
-                "PERSIST SECURITY INFO=True; USER ID=hr; password=fMigBU5hg2vBQ7t; Pooling = False; ";
-                using (OracleConnection con = new OracleConnection(connString))
-                {
-                    OracleCommand cmd = new OracleCommand("SELECT * FROM NHAN_VIEN", con);
-                    OracleDataAdapter oda = new OracleDataAdapter(cmd);
-                    DataSet ds = new DataSet();
-                    oda.Fill(ds);
-                    if (ds.Tables.Count > 0)
-                    {
-                        dataGridView1.DataSource = ds.Tables[0].DefaultView;
-                    }
-                 
-                }
+                //OracleCommand cmd = new OracleCommand("SELECT * FROM NHAN_VIEN", DbUltils.con);
+                //OracleDataAdapter oda = new OracleDataAdapter(cmd);
+                //DataSet ds = new DataSet();
+
+                //oda.Fill(ds);
+                //if (ds.Tables.Count > 0)
+                //{
+                //    dataGridView1.DataSource = ds.Tables[0].DefaultView;
+                //    dataGridView1.ReadOnly = true;
+                //}
+                OracleCommand cmd = new OracleCommand("SELECT * FROM NHAN_VIEN", DbUltils.con);
+                OracleDataAdapter oda = new OracleDataAdapter(cmd);
+                DataTable table = new DataTable();
+
+                oda.Fill(table);
+
+                dataGridView1.DataSource = table;
+                dataGridView1.ReadOnly = true;
             }
             catch (Exception ex)
             {

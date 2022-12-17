@@ -25,9 +25,11 @@ namespace DBSE
             string username = textBoxUsername.Text;
             string password = textBoxPass.Text;
 
-            OracleConnection con = DbUltils.GetDBConnection(id, username, password);
+            DbUltils.con = DbUltils.GetDBConnection(id, username, password);
 
-            OracleCommand cmd = new OracleCommand("SELECT * FROM NHAN_VIEN", con);
+            //OracleConnection con = DbUltils.GetDBConnection(id, username, password);
+
+            OracleCommand cmd = new OracleCommand("SELECT * FROM NHAN_VIEN", DbUltils.con);
             OracleDataAdapter oda = new OracleDataAdapter(cmd);
             DataSet ds = new DataSet();
             try
@@ -37,8 +39,9 @@ namespace DBSE
                 {
                     DashBoard f = new DashBoard();
                     f.Show();
+                    f.Closed += (s, args) => this.Close();
+                    this.Hide();
                 }
- 
             }
             catch(Exception E)
             {

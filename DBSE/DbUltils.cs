@@ -10,6 +10,7 @@ namespace DBSE
 {
     class DbUltils
     {
+        public static OracleConnection con;
         public static OracleConnection
         GetDBConnection(string id, string username, string password)
         {
@@ -17,6 +18,7 @@ namespace DBSE
                 "PERSIST SECURITY INFO=True; USER ID=" + username + 
                 "; password=" + password + "; Pooling = False; ";
             OracleConnection conn = new OracleConnection(connString);
+
             return conn;
         }
     }

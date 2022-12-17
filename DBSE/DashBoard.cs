@@ -22,5 +22,12 @@ namespace DBSE
             EmpList f = new EmpList();
             f.Show();
         }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 f = new Form1();
+            f.Show();
+        }
     }
 }

@@ -31,6 +31,7 @@ namespace DBSE
         {
             this.buttonEmpList = new System.Windows.Forms.Button();
             this.buttonSupervision = new System.Windows.Forms.Button();
+            this.buttonLogout = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonEmpList
@@ -52,11 +53,22 @@ namespace DBSE
             this.buttonSupervision.Text = "Giám sát chỉnh sửa";
             this.buttonSupervision.UseVisualStyleBackColor = true;
             // 
+            // buttonLogout
+            // 
+            this.buttonLogout.Location = new System.Drawing.Point(188, 105);
+            this.buttonLogout.Name = "buttonLogout";
+            this.buttonLogout.Size = new System.Drawing.Size(94, 28);
+            this.buttonLogout.TabIndex = 2;
+            this.buttonLogout.Text = "Đăng xuất";
+            this.buttonLogout.UseVisualStyleBackColor = true;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
+            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 113);
+            this.ClientSize = new System.Drawing.Size(480, 167);
+            this.Controls.Add(this.buttonLogout);
             this.Controls.Add(this.buttonSupervision);
             this.Controls.Add(this.buttonEmpList);
             this.Name = "DashBoard";
@@ -69,5 +81,6 @@ namespace DBSE
 
         private System.Windows.Forms.Button buttonEmpList;
         private System.Windows.Forms.Button buttonSupervision;
+        private System.Windows.Forms.Button buttonLogout;
     }
 }
