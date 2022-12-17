@@ -30,11 +30,11 @@ namespace DBSE
                     OracleDataAdapter oda = new OracleDataAdapter(cmd);
                     DataSet ds = new DataSet();
                     oda.Fill(ds);
-                    Console.WriteLine("da toi day");
                     if (ds.Tables.Count > 0)
                     {
                         dataGridView1.DataSource = ds.Tables[0].DefaultView;
                     }
+                 
                 }
             }
             catch (Exception ex)

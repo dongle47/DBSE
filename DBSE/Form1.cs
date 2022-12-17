@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Oracle.DataAccess.Client;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,8 +21,30 @@ namespace DBSE
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            DashBoard f = new DashBoard();
-            f.Show();
+            string id = textBoxID.Text;
+            string username = textBoxUsername.Text;
+            string password = textBoxPass.Text;
+
+            OracleConnection con = DbUltils.GetDBConnection(id, username, password);
+
+            OracleCommand cmd = new OracleCommand("SELECT * FROM NHAN_VIEN", con);
+            OracleDataAdapter oda = new OracleDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            try
+            {
+                oda.Fill(ds);
+                if (ds.Tables.Count > 0)
+                {
+                    DashBoard f = new DashBoard();
+                    f.Show();
+                }
+ 
+            }
+            catch(Exception E)
+            {
+                MessageBox.Show("Tên đăng nhập hoặc mật khẩu không chính xác", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
         }
     }
 }

@@ -30,33 +30,33 @@ namespace DBSE
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonChooseUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 31);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(724, 198);
+            this.dataGridView1.Size = new System.Drawing.Size(735, 198);
             this.dataGridView1.TabIndex = 0;
             // 
-            // button1
+            // buttonChooseUpdate
             // 
-            this.button1.Location = new System.Drawing.Point(313, 268);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(155, 31);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "CHỈNH SỬA";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonChooseUpdate.Location = new System.Drawing.Point(285, 235);
+            this.buttonChooseUpdate.Name = "buttonChooseUpdate";
+            this.buttonChooseUpdate.Size = new System.Drawing.Size(159, 39);
+            this.buttonChooseUpdate.TabIndex = 1;
+            this.buttonChooseUpdate.Text = "CHỈNH SỬA";
+            this.buttonChooseUpdate.UseVisualStyleBackColor = true;
             // 
             // EmpList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(761, 286);
+            this.Controls.Add(this.buttonChooseUpdate);
             this.Controls.Add(this.dataGridView1);
             this.Name = "EmpList";
             this.Text = "EmpList";
@@ -69,6 +69,6 @@ namespace DBSE
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonChooseUpdate;
     }
 }
