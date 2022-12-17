@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DBSE
 {
-    public partial class DetailEmp : Form
+    public partial class UpdateEmp : Form
     {
-        public DetailEmp()
+        public UpdateEmp()
         {
             InitializeComponent();
         }

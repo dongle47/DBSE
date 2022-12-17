@@ -1,7 +1,7 @@
 ﻿
 namespace DBSE
 {
-    partial class DetailEmp
+    partial class UpdateEmp
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,7 @@ namespace DBSE
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.labelMST = new System.Windows.Forms.Label();
+            this.labelID = new System.Windows.Forms.Label();
             this.textBoxSalary = new System.Windows.Forms.TextBox();
             this.dateTimePickerDoB = new System.Windows.Forms.DateTimePicker();
             this.textBoxName = new System.Windows.Forms.TextBox();
@@ -82,14 +82,14 @@ namespace DBSE
             this.label4.TabIndex = 1;
             this.label4.Text = "Lương";
             // 
-            // labelMST
+            // labelID
             // 
-            this.labelMST.AutoSize = true;
-            this.labelMST.Location = new System.Drawing.Point(186, 46);
-            this.labelMST.Name = "labelMST";
-            this.labelMST.Size = new System.Drawing.Size(23, 13);
-            this.labelMST.TabIndex = 2;
-            this.labelMST.Text = "mst";
+            this.labelID.AutoSize = true;
+            this.labelID.Location = new System.Drawing.Point(184, 53);
+            this.labelID.Name = "labelID";
+            this.labelID.Size = new System.Drawing.Size(23, 13);
+            this.labelID.TabIndex = 2;
+            this.labelID.Text = "mst";
             // 
             // textBoxSalary
             // 
@@ -164,7 +164,7 @@ namespace DBSE
             this.comboBox1.Size = new System.Drawing.Size(110, 21);
             this.comboBox1.TabIndex = 8;
             // 
-            // DetailEmp
+            // UpdateEmp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -177,13 +177,13 @@ namespace DBSE
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.textBoxSalary);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.labelMST);
+            this.Controls.Add(this.labelID);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "DetailEmp";
+            this.Name = "UpdateEmp";
             this.Text = "DetailEmp";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -196,15 +196,15 @@ namespace DBSE
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label labelMST;
-        private System.Windows.Forms.TextBox textBoxSalary;
-        private System.Windows.Forms.DateTimePicker dateTimePickerDoB;
-        private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.TextBox textBoxSalary;
+        public System.Windows.Forms.DateTimePicker dateTimePickerDoB;
+        public System.Windows.Forms.TextBox textBoxName;
+        public System.Windows.Forms.TextBox textBoxEmail;
+        public System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.Label labelID;
     }
 }

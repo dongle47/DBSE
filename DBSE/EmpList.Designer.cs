@@ -50,6 +50,7 @@ namespace DBSE
             this.buttonChooseUpdate.TabIndex = 1;
             this.buttonChooseUpdate.Text = "CHỈNH SỬA";
             this.buttonChooseUpdate.UseVisualStyleBackColor = true;
+            this.buttonChooseUpdate.Click += new System.EventHandler(this.buttonChooseUpdate_Click);
             // 
             // EmpList
             // 

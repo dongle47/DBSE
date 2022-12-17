@@ -90,11 +90,11 @@
       <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
     <Compile Include="DbUltils.cs" />
-    <Compile Include="DetailEmp.cs">
+    <Compile Include="UpdateEmp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DetailEmp.Designer.cs">
-      <DependentUpon>DetailEmp.cs</DependentUpon>
+    <Compile Include="UpdateEmp.Designer.cs">
+      <DependentUpon>UpdateEmp.cs</DependentUpon>
     </Compile>
     <Compile Include="EmpList.cs">
       <SubType>Form</SubType>
@@ -113,8 +113,8 @@
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DetailEmp.resx">
-      <DependentUpon>DetailEmp.cs</DependentUpon>
+    <EmbeddedResource Include="UpdateEmp.resx">
+      <DependentUpon>UpdateEmp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmpList.resx">
       <DependentUpon>EmpList.cs</DependentUpon>
