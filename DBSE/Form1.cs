@@ -22,11 +22,10 @@ namespace DBSE
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            string id = textBoxID.Text;
             string username = textBoxUsername.Text;
             string password = textBoxPass.Text;
 
-            DbUltils.con = DbUltils.GetDBConnection(id, username, password);
+            DbUltils.con = DbUltils.GetDBConnection(username, password);
 
             //OracleConnection con = DbUltils.GetDBConnection(id, username, password);
 

@@ -13,7 +13,7 @@ namespace DBSE
        
         public static OracleConnection con;
         public static OracleConnection
-        GetDBConnection(string id, string username, string password)
+        GetDBConnection(string username, string password)
         {
             string connString = "DATA SOURCE=103.104.122.48:59012/xe;" +
                 "PERSIST SECURITY INFO=True; USER ID=" + username + 
