@@ -51,7 +51,7 @@ namespace DBSE
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(114, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(177, 16);
+            this.label1.Size = new System.Drawing.Size(176, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "CHỈNH SỬA THÔNG TIN";
             // 
@@ -185,6 +185,7 @@ namespace DBSE
             this.Controls.Add(this.label1);
             this.Name = "UpdateEmp";
             this.Text = "DetailEmp";
+            this.Load += new System.EventHandler(this.UpdateEmp_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

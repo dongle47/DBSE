@@ -10,6 +10,7 @@ namespace DBSE
 {
     class DbUltils
     {
+       
         public static OracleConnection con;
         public static OracleConnection
         GetDBConnection(string id, string username, string password)

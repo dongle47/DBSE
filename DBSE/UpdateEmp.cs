@@ -16,5 +16,10 @@ namespace DBSE
         {
             InitializeComponent();
         }
+
+        private void UpdateEmp_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

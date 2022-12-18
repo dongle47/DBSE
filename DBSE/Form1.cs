@@ -1,4 +1,5 @@
-﻿using Oracle.DataAccess.Client;
+﻿//using System.Data.OracleClient;
+using Oracle.DataAccess.Client;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -48,6 +49,11 @@ namespace DBSE
                 MessageBox.Show("Tên đăng nhập hoặc mật khẩu không chính xác", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
