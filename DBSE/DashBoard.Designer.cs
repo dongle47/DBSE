@@ -55,7 +55,7 @@ namespace DBSE
             // 
             // buttonLogout
             // 
-            this.buttonLogout.Location = new System.Drawing.Point(188, 105);
+            this.buttonLogout.Location = new System.Drawing.Point(187, 89);
             this.buttonLogout.Name = "buttonLogout";
             this.buttonLogout.Size = new System.Drawing.Size(94, 28);
             this.buttonLogout.TabIndex = 2;
@@ -67,7 +67,7 @@ namespace DBSE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 167);
+            this.ClientSize = new System.Drawing.Size(482, 140);
             this.Controls.Add(this.buttonLogout);
             this.Controls.Add(this.buttonSupervision);
             this.Controls.Add(this.buttonEmpList);

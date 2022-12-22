@@ -32,7 +32,7 @@ namespace DBSE
                 //    dataGridView1.DataSource = ds.Tables[0].DefaultView;
                 //    dataGridView1.ReadOnly = true;
                 //}
-                OracleCommand cmd = new OracleCommand("SELECT * FROM NHAN_VIEN", DbUltils.con);
+                OracleCommand cmd = new OracleCommand("SELECT * FROM HR.NHAN_VIEN", DbUltils.con);
                 OracleDataAdapter oda = new OracleDataAdapter(cmd);
                 DataTable table = new DataTable();
 
@@ -55,7 +55,7 @@ namespace DBSE
         private void buttonChooseUpdate_Click(object sender, EventArgs e)
         {
             UpdateEmp f = new UpdateEmp();
-            f.labelID.Text = "Mã nhân viên: " + dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            f.labelID.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             f.textBoxName.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             f.dateTimePickerDoB.Value = (DateTime)dataGridView1.CurrentRow.Cells[2].Value;
             f.textBoxEmail.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();

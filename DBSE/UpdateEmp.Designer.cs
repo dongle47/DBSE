@@ -33,7 +33,6 @@ namespace DBSE
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.labelID = new System.Windows.Forms.Label();
             this.textBoxSalary = new System.Windows.Forms.TextBox();
             this.dateTimePickerDoB = new System.Windows.Forms.DateTimePicker();
             this.textBoxName = new System.Windows.Forms.TextBox();
@@ -41,8 +40,7 @@ namespace DBSE
             this.buttonCancel = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.labelID = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -82,15 +80,6 @@ namespace DBSE
             this.label4.TabIndex = 1;
             this.label4.Text = "Lương";
             // 
-            // labelID
-            // 
-            this.labelID.AutoSize = true;
-            this.labelID.Location = new System.Drawing.Point(184, 53);
-            this.labelID.Name = "labelID";
-            this.labelID.Size = new System.Drawing.Size(23, 13);
-            this.labelID.TabIndex = 2;
-            this.labelID.Text = "mst";
-            // 
             // textBoxSalary
             // 
             this.textBoxSalary.Location = new System.Drawing.Point(141, 193);
@@ -115,16 +104,17 @@ namespace DBSE
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(84, 278);
+            this.buttonUpdate.Location = new System.Drawing.Point(200, 236);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(90, 33);
             this.buttonUpdate.TabIndex = 6;
             this.buttonUpdate.Text = "Cập nhật";
             this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(216, 278);
+            this.buttonCancel.Location = new System.Drawing.Point(101, 236);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 33);
             this.buttonCancel.TabIndex = 7;
@@ -147,29 +137,21 @@ namespace DBSE
             this.textBoxEmail.Size = new System.Drawing.Size(110, 20);
             this.textBoxEmail.TabIndex = 3;
             // 
-            // label6
+            // labelID
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(76, 230);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 13);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Phòng ban";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(141, 227);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(110, 21);
-            this.comboBox1.TabIndex = 8;
+            this.labelID.AutoSize = true;
+            this.labelID.Location = new System.Drawing.Point(267, 53);
+            this.labelID.Name = "labelID";
+            this.labelID.Size = new System.Drawing.Size(23, 13);
+            this.labelID.TabIndex = 8;
+            this.labelID.Text = "mst";
             // 
             // UpdateEmp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(398, 339);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(397, 302);
+            this.Controls.Add(this.labelID);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.textBoxName);
@@ -177,8 +159,6 @@ namespace DBSE
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.textBoxSalary);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.labelID);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -200,12 +180,10 @@ namespace DBSE
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         public System.Windows.Forms.TextBox textBoxSalary;
         public System.Windows.Forms.DateTimePicker dateTimePickerDoB;
         public System.Windows.Forms.TextBox textBoxName;
         public System.Windows.Forms.TextBox textBoxEmail;
-        public System.Windows.Forms.ComboBox comboBox1;
         public System.Windows.Forms.Label labelID;
     }
 }

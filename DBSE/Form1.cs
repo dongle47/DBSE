@@ -29,7 +29,7 @@ namespace DBSE
 
             //OracleConnection con = DbUltils.GetDBConnection(id, username, password);
 
-            OracleCommand cmd = new OracleCommand("SELECT * FROM NHAN_VIEN", DbUltils.con);
+            OracleCommand cmd = new OracleCommand("SELECT * FROM user_users", DbUltils.con);
             OracleDataAdapter oda = new OracleDataAdapter(cmd);
             DataSet ds = new DataSet();
             try
@@ -46,7 +46,6 @@ namespace DBSE
             catch(Exception E)
             {
                 MessageBox.Show("Tên đăng nhập hoặc mật khẩu không chính xác", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
             }
         }
 
