@@ -44,7 +44,7 @@ namespace DBSE
             // 
             // buttonChooseUpdate
             // 
-            this.buttonChooseUpdate.Location = new System.Drawing.Point(285, 235);
+            this.buttonChooseUpdate.Location = new System.Drawing.Point(295, 225);
             this.buttonChooseUpdate.Name = "buttonChooseUpdate";
             this.buttonChooseUpdate.Size = new System.Drawing.Size(159, 39);
             this.buttonChooseUpdate.TabIndex = 1;
@@ -70,6 +70,6 @@ namespace DBSE
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button buttonChooseUpdate;
+        public System.Windows.Forms.Button buttonChooseUpdate;
     }
 }

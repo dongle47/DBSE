@@ -20,6 +20,12 @@ namespace DBSE
         private void buttonEmpList_Click(object sender, EventArgs e)
         {
             EmpList f = new EmpList();
+            if(DbUltils.username != "linh" 
+                && DbUltils.username != "nhu" 
+                && DbUltils.username != "nhi")
+            {
+                f.buttonChooseUpdate.Enabled = false;
+            }
             f.Show();
         }
 

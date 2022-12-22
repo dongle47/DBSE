@@ -41,6 +41,8 @@ namespace DBSE
                     f.Show();
                     f.Closed += (s, args) => this.Close();
                     this.Hide();
+
+                    DbUltils.setUsername(username);
                 }
             }
             catch(Exception E)

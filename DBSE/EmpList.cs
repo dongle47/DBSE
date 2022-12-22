@@ -56,6 +56,7 @@ namespace DBSE
         {
             UpdateEmp f = new UpdateEmp();
             f.labelID.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            f.labelPbID.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
             f.textBoxName.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             f.dateTimePickerDoB.Value = (DateTime)dataGridView1.CurrentRow.Cells[2].Value;
             f.textBoxEmail.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();

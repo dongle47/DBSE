@@ -30,7 +30,6 @@ namespace DBSE
         private void InitializeComponent()
         {
             this.buttonEmpList = new System.Windows.Forms.Button();
-            this.buttonSupervision = new System.Windows.Forms.Button();
             this.buttonLogout = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -44,18 +43,9 @@ namespace DBSE
             this.buttonEmpList.UseVisualStyleBackColor = true;
             this.buttonEmpList.Click += new System.EventHandler(this.buttonEmpList_Click);
             // 
-            // buttonSupervision
-            // 
-            this.buttonSupervision.Location = new System.Drawing.Point(259, 30);
-            this.buttonSupervision.Name = "buttonSupervision";
-            this.buttonSupervision.Size = new System.Drawing.Size(167, 35);
-            this.buttonSupervision.TabIndex = 1;
-            this.buttonSupervision.Text = "Giám sát chỉnh sửa";
-            this.buttonSupervision.UseVisualStyleBackColor = true;
-            // 
             // buttonLogout
             // 
-            this.buttonLogout.Location = new System.Drawing.Point(187, 89);
+            this.buttonLogout.Location = new System.Drawing.Point(87, 86);
             this.buttonLogout.Name = "buttonLogout";
             this.buttonLogout.Size = new System.Drawing.Size(94, 28);
             this.buttonLogout.TabIndex = 2;
@@ -67,9 +57,8 @@ namespace DBSE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(482, 140);
+            this.ClientSize = new System.Drawing.Size(278, 138);
             this.Controls.Add(this.buttonLogout);
-            this.Controls.Add(this.buttonSupervision);
             this.Controls.Add(this.buttonEmpList);
             this.Name = "DashBoard";
             this.Text = "DashBoard";
@@ -80,7 +69,6 @@ namespace DBSE
         #endregion
 
         private System.Windows.Forms.Button buttonEmpList;
-        private System.Windows.Forms.Button buttonSupervision;
         private System.Windows.Forms.Button buttonLogout;
     }
 }

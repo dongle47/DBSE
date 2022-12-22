@@ -41,6 +41,7 @@ namespace DBSE
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.labelID = new System.Windows.Forms.Label();
+            this.labelPbID = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -120,6 +121,7 @@ namespace DBSE
             this.buttonCancel.TabIndex = 7;
             this.buttonCancel.Text = "Huỷ bỏ";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // label5
             // 
@@ -146,11 +148,21 @@ namespace DBSE
             this.labelID.TabIndex = 8;
             this.labelID.Text = "mst";
             // 
+            // labelPbID
+            // 
+            this.labelPbID.AutoSize = true;
+            this.labelPbID.Location = new System.Drawing.Point(41, 53);
+            this.labelPbID.Name = "labelPbID";
+            this.labelPbID.Size = new System.Drawing.Size(33, 13);
+            this.labelPbID.TabIndex = 9;
+            this.labelPbID.Text = "pb_id";
+            // 
             // UpdateEmp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(397, 302);
+            this.Controls.Add(this.labelPbID);
             this.Controls.Add(this.labelID);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonUpdate);
@@ -185,5 +197,6 @@ namespace DBSE
         public System.Windows.Forms.TextBox textBoxName;
         public System.Windows.Forms.TextBox textBoxEmail;
         public System.Windows.Forms.Label labelID;
+        public System.Windows.Forms.Label labelPbID;
     }
 }
